@@ -1,9 +1,8 @@
 import { Sorter } from './Sorter'
 import { NumbersCollection } from './NumbersCollection'
 import { CharactersCollection } from './CharactersCollection'
+import { LinkedList } from './LinkedList'
 
-const charactersCollection = new CharactersCollection('xXaghlnmvqfys')
-const sorter = new Sorter(charactersCollection)
-
-sorter.sort()
-console.log(charactersCollection.data)
+const numbersCollection = new NumbersCollection([50, 3, -5, 10])
+numbersCollection.sort()
+console.log(numbersCollection.data)
